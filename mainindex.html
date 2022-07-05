@@ -1,0 +1,394 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="mainstyle.css" rel="stylesheet">
+
+    <title>All about javascript</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>CSS Documentation</h1>
+        </header>
+
+        <ul>
+
+            <li><a href="#intro" class="nav-link"> Introduction to Javascript</a></li>
+            <li><a href="#syntax" class="nav-link"> JS Syntax</a></li>
+            <li><a href="#DF" class="nav-link"> Data types and function</a></li>
+            <li><a href="#SA" class="nav-link"> Arithmatic opperator</a> </li>
+            <li><a href="#Loop" class="nav-link">Different types of loop in js</a></li>
+            <li><a href="#error" class="nav-link"> Errors and Debugging</a></li>
+            <li><a href="#quizz" class="nav-link"> Quizz on JS</a></li>
+       </ul>
+    </nav>
+
+    <main id="main-doc">
+
+
+        <section id="intro" class="main-section">
+            <header>
+                <h2>What is Javascript?</h2>
+            </header>
+            <div>
+                <p>
+                    JavaScript is a scripting or programming language that allows you to implement complex 
+                    features on web pages — every time a web page does more than just sit there and display 
+                    static information for you to look at — displaying timely content updates, interactive maps,
+                    animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is 
+                    probably involved. It is the third layer of the layer cake of standard web technologies,
+                    two of which (HTML and CSS).
+                    JavaScript was created in 1995 by Brendan Eich while he was an engineer at Netscape.
+                    JavaScript was first released with Netscape 2 early in 1996.
+                    In HTML, JavaScript code is inserted between <code>script</code> and <code>/script</code> tags.
+            
+                </p>
+                <code class="code-box">
+                  &nbsp; &nbsp; Example<br>
+                  &lt; script> &gt; <br>
+                    document.getElementById("demo").innerHTML = "My First JavaScript";<br>
+                    &lt;/script &gt;  
+                </code>
+                <p> You can also seperately do the scripting and html! Using a text editor, paste the three lines above into a new file. Save
+                    the file as <code>script.js</code> in a directory named <code>scripts</code>.
+                </p>
+                <p>To make the code work, we still need to apply this script above to your HTML document. Otherwise, the
+                    it will not give any output</p>
+                <ol>
+
+                    <li>Open your <code>index.html</code> file. Paste the following line in the head between
+                        the<code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> tags.
+                        <code class="code-box"> &lt;script src="script.js"&gt;&lt;/script&gt;</code>
+                    </li>
+                    <li>Save <code>index.html</code> and load it in your browser.</li>
+                </ol>
+               
+
+            </div>
+
+
+        </section>
+
+        <section id="syntax" class="main-section">
+            <header>
+                <h2> Syntax of JavaScript</h2>
+            </header>
+            <div>
+                <p>
+                    JavaScript syntax is the set of rules, how JavaScript programs are constructed:
+                    The JavaScript syntax defines two types of values:
+
+                  <ol>
+                     Fixed values<br>
+                     Variable values<br>
+                  </ol>
+                   Fixed values are called Literals.<br>
+                   Variable values are called Variables.
+                </p>
+                <h3>JavaScript Literals</h3>
+                <p>
+                    The two most important syntax rules for fixed values are:<br>
+
+                  1. Numbers are written with or without decimals<br>
+                  2. Strings are text, written within double or single quotes:<br>
+    
+                </p>
+                <h3>JavaScript Variables</h3>
+                <p>
+                    In a programming language, variables are used to store data values.<br>
+
+                    JavaScript uses the keywords var, let and const to declare variables.<br>
+
+                    An equal sign is used to assign values to variables.<br>
+                </p>
+            </div>
+            For More Information refer <a href="https://www.w3schools.com/js/js_syntax.asp">w3schools</a>
+        </section>
+        <section id="DF" class="main-section">
+            <header>
+                <h2>Data types and funcction </h2>
+            </header>
+            <div>
+                <p><h3> Data types</h3><br>
+                    The set of types in the JavaScript language consists of primitive values and objects.<br>
+                    <ul type="circle">
+                   <li> Primitive values (immutable datum represented directly at the lowest level of the language)</li>
+                    <li>Boolean type</li>
+                    <li>Null type</li>
+                    <li>Undefined type</li>
+                    <li>Number type</li>
+                    <li>BigInt type</li>
+                    <li>String type</li>
+                    <li>Symbol type</li>
+                    <li>Objects</li>
+                </ul>
+                </p>
+                For More Information refer 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#javascript_types">MDN</a>
+
+                <p><h3>JavaScript Functions</h3><br>
+                    A JavaScript function is a block of code designed to perform a particular task.<br>
+                    A JavaScript function is executed when "something" invokes it (calls it).<br>
+                    <h3>JavaScript Function Syntax</h3>
+                    A JavaScript function is defined with the <code>function</code> keyword, followed by a name, followed by parentheses ().<br>
+                   Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).<br>
+                  The parentheses may include parameter names separated by commas:<br>
+                 (parameter1, parameter2, ...)
+
+                 The code to be executed, by the function, is placed inside curly brackets: {}<br>
+                 <code class="code-box">
+                    &nbsp; &nbsp; Example<br>
+                    function name(parameter1, parameter2, parameter3) {<br>
+                        // code to be executed<br>
+                      }  
+                  </code>
+                  Function parameters are listed inside the parentheses () in the function definition.<br>
+                  Function arguments are the values received by the function when it is invoked.<br>
+                  Inside the function, the arguments (the parameters) behave as local variables.<br>
+                </p>
+                For More Information refer <a href="https://www.w3schools.com/js/js_functions.asp">w3schools</a>
+            </div>
+        </section>
+        <section id="SA" class="main-section">
+            <header>
+                <h2> Different types of arithmatic operators</h2>
+            </header>
+            <div>
+                <p>There are many different types of arithmatic operators.  Here are some of the types of arithmatic operators:</p>
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Operator</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>+</td>
+                            <td>Addition</td>
+                            <td>x+y</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Substraction</td>
+                            <td>x-y</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Multiplication</td>
+                            <td>x*y</td>
+                        </tr>
+                        <tr>
+                            <td>**</td>
+                            <td>Exponential</td>
+                            <td>x**=y is same as x=x**y</td>
+                        </tr>
+                        <tr>
+                            <td>/</td>
+                            <td>division</td>
+                            <td>x/y</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>modulus(reminder)</td>
+                            <td>x%y</td>
+                        </tr>
+                        <tr>
+                            <td>++</td>
+                            <td>increment</td>
+                            <td>x++=y</td>
+                        </tr>
+                        <tr>
+                            <td>--</td>
+                            <td>decrement</td>
+                            <td>x--=y</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </section>
+        <section id="Loop" class="main-section">
+            <header>
+                <h2> JavaScript if, else, else if, switch, while, and for loops</h2>
+            </header>
+            <p>
+               The statements that require loops are called <b>Conditional Statements</b> 
+                Very often when you write code, you want to perform different actions for different decisions.<br>
+
+                You can use conditional statements in your code to do this.<br>
+
+                In JavaScript we have the following conditional statements:<br>
+            </p>   
+
+            <ol>
+
+                <li>The if Statement<br>
+                    Use the <code>if</code> statement to specify a block of JavaScript code to be executed if a condition is true.
+                    <code class="code-box">
+                        &nbsp; &nbsp; syntax<br>
+                        if (condition) {<br>
+                            //  block of code to be executed if the condition is true<br>
+                          }
+                      </code>
+                </li>
+                <li>
+                    The else Statement<br>
+                    Use the <code>else</code> statement to specify a block of code to be executed if the condition is false.
+                    <code class="code-box">
+                        &nbsp; &nbsp; syntax<br>
+                        if (condition) {<br>
+                            //  block of code to be executed if the condition is true<br>
+                          } else {<br>
+                            //  block of code to be executed if the condition is false<br>
+                          } 
+                      </code>
+                </li>
+                <li>
+                    The else if Statement<br>
+                    Use the <code>else if</code> statement to specify a new condition if the first condition is false.
+                    <code class="code-box">
+                        &nbsp; &nbsp; syntax<br>
+                        if (condition) {<br>
+                            //  block of code to be executed if the condition is true<br>
+                          }  else if (condition2) {<br>
+                            //  block of code to be executed if the condition1 is false and condition2 is true<br>
+                          } else {<br>
+                            //  block of code to be executed if the condition1 is false and condition2 is false<br>
+                          }
+                      </code>
+                </li>
+                <li>
+                    The JavaScript Switch Statement<br>
+                    Use the <code>switch</code> statement to select one of many code blocks to be executed.
+
+                    <code class="code-box">
+                        &nbsp; &nbsp; syntax<br>
+                        switch(expression) {<br>
+                            case x:<br>
+                              // code block<br>
+                              break;<br>
+                            case y:<br>
+                              // code block<br>
+                              break;<br>
+                            default:<br>
+                              // code block<br>
+                          }
+                      </code>  
+                      This is how it works:<br> 
+
+                       The switch expression is evaluated once.<br>
+                       The value of the expression is compared with the values of each case.<br>
+                       If there is a match, the associated block of code is executed.<br>
+                       If there is no match, the default code block is executed.<br>           
+                </li>
+                <li>The While loop<br>
+                    Use the <code>while</code> loop loops through a block of code as long as a specified condition is true.
+                    <code class="code-box">
+                        &nbsp; &nbsp; syntax<br>
+                        while (condition) {<br>
+                            // code block to be executed<br>
+                          }
+                        
+                      </code>
+                </li>
+                <li>The for loop<br>
+                    <code class="code-box">
+                        &nbsp; &nbsp; syntax<br>
+                        for (statement 1; statement 2; statement 3) {<br>
+                            // code block to be executed<br>
+                          }
+                   </code>
+                      Statement 1 is executed (one time) before the execution of the code block.<br>
+                      Statement 2 defines the condition for executing the code block.<br>
+                      Statement 3 is executed (every time) after the code block has been executed.
+                </li>
+            </ol>
+        </section>
+        <section id="error" class="main-section">
+            <header>
+                <h2>JS: Errors and Debugging</h2>
+            </header>
+
+            <div><h3>Errors in javascript</h3>
+                <p>There are six different types of errors in javascript and they are as follows:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Error name</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EvalError</td>
+                            <td>An error has occurred in the eval() function</td>
+                        </tr>
+                        <tr>
+                            <td>RangeError</td>
+                            <td>A number "out of range" has occurred</td>
+                        </tr>
+                        <tr>
+                            <td>ReferenceError</td>
+                            <td>An illegal reference has occurred</td>
+                        </tr>
+                        <tr>
+                            <td>SyntaxError</td>
+                            <td>A syntax error has occurred</td>
+                        </tr>
+                        <tr>
+                            <td>TypeError</td>
+                            <td>A type error has occurred</td>
+                        </tr>
+                        <tr>
+                            <td>URIError</td>
+                            <td>An error in encodeURI() has occurred</td>
+                        </tr>
+                        
+                    </tbody>
+
+                </table>
+                For detailed overview on errors refer <a href="https://www.w3schools.com/js/js_errors.asp">w3schools</a>
+                <h3>Debugging in javascript</h3>
+                <p>
+                    Programming code might contain syntax errors, or logical errors.<br>
+                    Many of these errors are difficult to diagnose.<br>
+                    Often, when programming code contains errors, nothing will happen. There are no error messages, and you will get no indications where to search for errors.<br>
+                    Searching for (and fixing) errors in programming code is called code debugging.<br>
+                    <b>JavaScript Debuggers</b><br>
+                    Debugging is not easy. But fortunately, all modern browsers have a built-in JavaScript debugger.<br>
+                    Built-in debuggers can be turned on and off, forcing errors to be reported to the user.<br>
+                    With a debugger, you can also set breakpoints (places where code execution can be stopped), and examine variables while the code is executing.<br>
+                    <b>The debugger Keyword</b><br>
+                    The <code>debugger</code> keyword stops the execution of JavaScript, and calls (if available) the debugging function.
+                    This has the same function as setting a breakpoint in the debugger.
+                    If no debugging is available, the debugger statement has no effect.
+                    With the debugger turned on, this code will stop executing before it executes the third line.
+                    <code class="code-box">
+                        &nbsp; &nbsp; example<br>
+                        let x = 15 * 5;<br>
+                        debugger;<br>
+                        document.getElementById("demo").innerHTML = x;<br>
+                    </code>    
+                </p>
+            </div>
+
+        </section>
+
+        For a detailed  reference on javascript checkout  <a href="https://www.w3schools.com/js/default.asp">Javascript tutorials</a><br>
+
+        <section id="quizz" class="main-section">
+            <header><h2>Quizz</h2></header>
+        Take a test and check for your self what have you learnt so far  <a href="http://127.0.0.1:5500/swpd%20miniproject/index1.html"> Here</a>
+        </section>
+    </main>
+
+</body>
+
+</html>
